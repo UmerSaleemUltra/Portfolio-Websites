@@ -1,0 +1,362 @@
+/* responsive.css */
+
+/* Default styles */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Grid system for responsiveness */
+.grid {
+    display: grid;
+    gap: 16px;
+}
+
+/* Media Queries for responsive design */
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .text-4xl {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+    .text-lg {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .py-16 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .mb-8 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Small to medium devices (tablets, 768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .text-4xl {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+    .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+    .py-16 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .mb-8 {
+        margin-bottom: 1.75rem;
+    }
+}
+
+/* Medium to large devices (laptops/desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+    .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+    .py-16 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .mb-8 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Navigation menu */
+nav {
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem;
+}
+
+nav .menu {
+    display: none;
+}
+
+nav .menu a {
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+nav .menu a:hover {
+    color: #9CA3AF;
+}
+
+nav .toggle-menu {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    nav .menu {
+        display: flex;
+    }
+    nav .toggle-menu {
+        display: none;
+    }
+}
+
+/* Hero section */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1.25rem;
+    height: 100vh;
+    background-color: #000000;
+}
+
+#hero h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+#hero button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3B82F6;
+    color: #ffffff;
+    border: none;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+#hero button:hover {
+    background-color: #2563EB;
+}
+
+@media (min-width: 768px) {
+    #hero {
+        flex-direction: row;
+        text-align: left;
+    }
+    #hero .content {
+        flex: 1;
+    }
+    #hero .image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    #hero .image img {
+        width: 75%;
+        border-radius: 50%;
+        border: 4px solid #D1D5DB;
+    }
+}
+
+/* Section styles */
+.section {
+    padding: 2rem 1.25rem;
+}
+
+.section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section p {
+    font-size: 1.125rem;
+    color: #D1D5DB;
+    text-align: center;
+}
+
+/* Feature Cards */
+.feature-card {
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.feature-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .icon {
+    transform: rotate(360deg) scale(1.2);
+}
+
+@media (min-width: 768px) {
+    .features-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .features-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Pricing Cards */
+.pricing-card {
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #4B5563;
+    transition: transform 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.pricing-card h4 {
+    font-size: 1.5rem;
+    color: #00FFFF;
+    margin-bottom: 1rem;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+.pricing-card ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pricing-card ul li:last-child {
+    border-bottom: none;
+}
+
+.pricing-card .price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.pricing-card button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3B82F6;
+    color: #ffffff;
+    border: none;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.pricing-card button:hover {
+    background-color: #2563EB;
+}
+
+@media (min-width: 768px) {
+    .pricing-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #4B5563;
+    border-radius: 0.5rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.contact-form h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-form p {
+    font-size: 1rem;
+    color: #D1D5DB;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #D1D5DB;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #111827;
+    color: #ffffff;
+    border: 1px solid #4B5563;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3B82F6;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #2563EB;
+}

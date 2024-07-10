@@ -8,27 +8,28 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
-
-<body class="bg-black text-white cyber-grid">
-
-    <nav style="overflow-x: hidden;" class='w-full py-3  border-gray-700 cyber-grid'>
-        <div class='flex justify-between px-5 md:px-20 items-center font-semibold'>
+<body class="bg-black text-white">
+    <nav class="w-full py-3 border-gray-700">
+        <div class="flex justify-between px-5 md:px-20 items-center font-semibold">
             <div>
-                <h1 class="text-2xl">UMER SALEEM</h1>
+                <img style="height: 100px;" src="./Assets/UMER SALEEM.svg" alt="Logo">
             </div>
-            <div class='hidden md:flex xl:gap-10 md:gap-8 gap-2'>
+            <div class="hidden md:flex xl:gap-10 md:gap-8 gap-2">
                 <a href="#" class="hover:text-gray-400">Home</a>
-                <a href="#" class="hover:text-gray-400">About</a>
-                <a href="#" class="hover:text-gray-400">Features</a>
-                <a href="#" class="hover:text-gray-400">Services</a>
-                <a href="#" class="hover:text-gray-400">Contact</a>
+                <a href="#About" class="hover:text-gray-400">About</a>
+                <a href="#Features" class="hover:text-gray-400">Features</a>
+                <a href="#Services" class="hover:text-gray-400">Services</a>
+                <a href="#Pricing" class="hover:text-gray-400">Pricing</a>
+                <a href="#Skills" class="hover:text-gray-400">Skills</a>
+                <a href="#Contact" class="hover:text-gray-400">Contact</a>
             </div>
-            <div class='hidden md:block'>
-                <button id="get-started" class='py-2 px-6 bg-white text-black rounded-3xl font-semibold'>Get Started</button>
+            <div class="hidden md:block">
+                <button id="get-started" class="py-2 px-6 bg-white text-black rounded-3xl font-semibold">Get Started</button>
             </div>
-            <div class='md:hidden flex items-center'>
+            <div class="md:hidden flex items-center">
                 <button id="hamburger" class="focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -37,105 +38,109 @@
             </div>
         </div>
     </nav>
-<br>
-<br>
-    <!-- Hero Section -->
-    <section style="overflow-x: hidden;" id="hero" class="flex flex-col md:flex-row items-center justify-center h-screen text-center md:text-left px-5 md:px-20 bg-black cyber-grid">
-        <div class="md:w-1/2 mb-8 md:mb-0">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Make Designs That Engage, Delight, and Connect</h1>
-            <p class="text-lg md:text-xl mb-4">Hi, I'm Umer Saleem with more than 10 years of experience, I'm here to turn your ideas into digital success!</p>
-            <button class="py-2 px-6 bg-blue-500 text-white rounded-3xl font-semibold mb-4">Get Started</button>
-            <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-                <div class="text-center md:text-left">
-                    <h2 class="text-2xl md:text-3xl font-bold">660+</h2>
-                    <p>Projects Delivered</p>
-                </div>
-                <div class="text-center md:text-left">
-                    <h2 class="text-2xl md:text-3xl font-bold">99%</h2>
-                    <p>Client Satisfaction</p>
-                </div>
-                <div class="text-center md:text-left">
-                    <h2 class="text-2xl md:text-3xl font-bold">99%</h2>
-                    <p>Client Satisfaction</p>
-                </div>
-            </div>
-        </div>
-        <div class="md:w-1/2 flex justify-center ">
-            <img src="https://img.freepik.com/premium-photo/man-sits-bench-with-laptop-plant-background_148003-2850.jpg?ga=GA1.1.1737391858.1720549462&semt=ais_hybrid" alt="Profile Image" class="w-3/4 md:w-full rounded-full border-4 border-gray-300 mt-5">
-        </div>
-    </section>
 
-    <div id="mobile-menu" class='fixed inset-y-0 left-0 w-64 bg-black text-white transform -translate-x-full cyber-grid'>
+    <div id="mobile-menu" class="fixed inset-y-0 left-0 w-64 bg-black text-white transform -translate-x-full transition-transform duration-300">
         <button id="close-menu" class="focus:outline-none self-end mb-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
         </button>
-        <a href="#" class="block py-2">Home</a>
-        <a href="#" class="block py-2">About</a>
-        <a href="#" class="block py-2">Features</a>
-        <a href="#" class="block py-2">Services</a>
-        <a href="#" class="block py-2">Contact</a>
+        <a href="#" class="hover:text-gray-400 block ml-10">Home</a>
+        <br>
+        <a href="#About" class="hover:text-gray-400 block ml-10">About</a>
+        <br>
+        <a href="#Features" class="hover:text-gray-400 block ml-10">Features</a>
+        <br>
+        <a href="#Services" class="hover:text-gray-400 block ml-10">Services</a>
+        <br>
+        <a href="#Pricing" class="hover:text-gray-400 block ml-10">Pricing</a>
+        <br>
+        <a href="#Skills" class="hover:text-gray-400 block ml-10">Skills</a>
+        <br>
+        <a href="#Contact" class="hover:text-gray-400 block ml-10">Contact</a>
     </div>
-    <br>
-    <br>
-
-    <div style="overflow-x: hidden;" class="sm:flex items-center max-w-screen-xl bg-black cyber-grid text-white">
-        <div class="sm:w-1/2 p-10">
-            <div class="image object-center text-center">
-                <img src="https://i.imgur.com/WbQnbas.png">
+<!-- Hero Section -->
+<section id="hero" class="flex flex-col md:flex-row items-center justify-center h-screen text-center md:text-left px-5 md:px-20 bg-black">
+    <div class="md:w-1/2 mb-8 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome! I'm Umer Saleem</h1>
+        <p class="text-lg md:text-xl mb-4">A passionate student, learner, and developer with 1 year of experience in building dynamic and responsive web applications. I thrive on turning ideas into digital reality and continuously strive to expand my skills and knowledge in the tech world.</p>
+        <button class="py-2 px-6 bg-blue-500 text-white rounded-3xl font-semibold mb-4">Get Started</button>
+        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+            <div class="text-center md:text-left">
+                <h2 class="text-2xl md:text-3xl font-bold">660+</h2>
+                <p>Projects Delivered</p>
+            </div>
+            <div class="text-center md:text-left">
+                <h2 class="text-2xl md:text-3xl font-bold">99%</h2>
+                <p>Client Satisfaction</p>
             </div>
         </div>
-        <div class="sm:w-1/2 p-5">
-            <div class="text">
-                <span class="text-gray-400 border-b-2 border-indigo-600 uppercase neon-text marg marg text-2xl font-semibold">About us</span>
-                <h2 class="my-4 font-bold text-3xl sm:text-4xl">About <span class="text-indigo-600">Our Company</span></h2>
-                <p class="text-gray-300">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, commodi doloremque, fugiat illum magni minus nisi nulla numquam obcaecati placeat quia, repellat tempore voluptatum.
-                </p>
-            </div>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+        <img src="./Assets/man-sits-bench-with-laptop-plant-background_148003-2850.avif" alt="Profile Image" class="w-3/4 md:w-full rounded-full border-4 border-gray-300 mt-5">
+    </div>
+</section>
+
+
+    <!-- About Section -->
+<div id="About" style="overflow-x: hidden;" class="sm:flex items-center max-w-screen-xl bg-black text-white">
+    <div class="sm:w-1/2 p-10">
+        <div class="image object-center text-center">
+            <img src="./Assets/WbQnbas.png" alt="About Image">
         </div>
     </div>
+    <div class="sm:w-1/2 p-5">
+        <div class="text">
+            <span class="text-gray-400 border-b-2 border-indigo-600 uppercase text-2xl font-semibold">About Me</span>
+            <h2 class="my-4 font-bold text-3xl sm:text-4xl">Hi, I'm <span class="text-indigo-600">Umer Saleem</span></h2>
+            <p class="text-gray-300">
+                I am a passionate student, learner, and developer with 1 year of experience in creating engaging and efficient web applications. My journey in the world of web development has been driven by a love for technology and a desire to turn ideas into reality. With a keen eye for detail and a commitment to continuous learning, I strive to build solutions that not only meet but exceed expectations.
+            </p>
+        </div>
+    </div>
+</div>
 
-    <div style="margin-top: 50px;" class="container mx-auto px-4">
-        <h3 class="text-center text-2xl font-bold mb-2 text-4xl md:text-5xl font-bold mb-4 neon-text">Quantum Features</h3>
+
+    <div id="Features" style="margin-top: 50px;" class="container mx-auto px-4">
+        <h3 class="text-center text-2xl font-bold mb-4 text-4xl md:text-5xl">Quantum Features</h3>
+        <br>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
                 <div class="text-5xl mb-4 text-blue-500">
                     <i class="fas fa-code"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-2">Website Development</h3>
                 <p class="text-gray-300">Building responsive, SEO-friendly, high-performance websites with top-notch communication throughout the project.</p>
             </div>
-            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
                 <div class="text-5xl mb-4 text-indigo-500">
                     <i class="fas fa-pencil-ruler"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-2">UI/UX Design</h3>
                 <p class="text-gray-300">Crafting user-friendly interfaces and experiences that delight and engage users.</p>
             </div>
-            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
                 <div class="text-5xl mb-4 text-green-500">
                     <i class="fas fa-search"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-2">SEO Friendly</h3>
                 <p class="text-gray-300">Optimizing websites to rank higher in search engine results and attract more traffic.</p>
             </div>
-            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
                 <div class="text-5xl mb-4 text-red-500">
                     <i class="fas fa-shopping-cart"></i>
                 </div>
-                <h3 class="text-2xl font-bold mb-2">E-commerce Websites</h3>
+                <h3 class="text-2xl font-bold mb-2 ">E-commerce Websites</h3>
                 <p class="text-gray-300">Developing feature-rich online stores with seamless shopping experiences.</p>
             </div>
-            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
                 <div class="text-5xl mb-4 text-yellow-500">
                     <i class="fas fa-tachometer-alt"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-2">High Performance</h3>
                 <p class="text-gray-300">Ensuring fast load times and optimal performance for all web applications.</p>
             </div>
-            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
                 <div class="text-5xl mb-4 text-teal-500">
                     <i class="fas fa-comments"></i>
                 </div>
@@ -145,45 +150,46 @@
         </div>
     </div>
 
-    <div style="margin-top: 50px;" class="container mx-auto px-4">
-        <h3 class="text-center text-2xl font-bold mb-2 text-4xl md:text-5xl font-bold mb-4 neon-text">Our Services</h3>
+    <div id="Services" style="margin-top: 50px;" class="container mx-auto px-4">
+        <h3 class="text-center text-2xl font-bold mb-4 text-4xl md:text-5xl">Our Services</h3>
+        <br>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
                 <div class="text-5xl mb-4 text-blue-500">
                     <i class="fas fa-code"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-2">Website Development</h3>
                 <p class="text-gray-300">Building responsive, SEO-friendly, high-performance websites with top-notch communication throughout the project.</p>
             </div>
-            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
                 <div class="text-5xl mb-4 text-indigo-500">
                     <i class="fas fa-pencil-ruler"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-2">UI/UX Design</h3>
                 <p class="text-gray-300">Crafting user-friendly interfaces and experiences that delight and engage users.</p>
             </div>
-            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
                 <div class="text-5xl mb-4 text-red-500">
                     <i class="fas fa-shopping-cart"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-2">E-commerce Websites</h3>
                 <p class="text-gray-300">Developing feature-rich online stores with seamless shopping experiences.</p>
             </div>
-            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
                 <div class="text-5xl mb-4 text-yellow-500">
                     <i class="fas fa-paint-brush"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-2">Logo Design</h3>
                 <p class="text-gray-300">Creating memorable and impactful logos that define your brand's identity.</p>
             </div>
-            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
                 <div class="text-5xl mb-4 text-pink-500">
                     <i class="fas fa-bullhorn"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-2">Social Media Branding</h3>
                 <p class="text-gray-300">Building a cohesive and engaging brand presence across all social media platforms.</p>
             </div>
-            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
                 <div class="text-5xl mb-4 text-green-500">
                     <i class="fas fa-lightbulb"></i>
                 </div>
@@ -192,151 +198,153 @@
             </div>
         </div>
     </div>
-        <!-- Skills Section -->
-        <div style="margin-top: 50px;" class="container mx-auto px-4">
-            <h3 class="text-center text-2xl font-bold mb-2 text-4xl md:text-5xl font-bold mb-4 neon-text">Skills</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
-                    <div class="text-5xl mb-4 text-blue-500">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">HTML</h3>
-                    <p class="text-gray-300">Building the structure of web pages with HTML.</p>
+
+    <!-- Skills Section -->
+    <div id="Skills" style="margin-top: 50px;" class="container mx-auto px-4">
+        <h3 class="text-center text-2xl font-bold mb-4 text-4xl md:text-5xl">Skills</h3>
+        <br>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fab fa-html5"></i>
                 </div>
-                <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
-                    <div class="text-5xl mb-4 text-blue-500">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">CSS</h3>
-                    <p class="text-gray-300">Styling web pages and creating visually appealing designs with CSS.</p>
+                <h3 class="text-2xl font-bold mb-2">HTML</h3>
+                <p class="text-gray-300">Building the structure of web pages with HTML.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fab fa-css3-alt"></i>
                 </div>
-                <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
-                    <div class="text-5xl mb-4 text-blue-500">
-                        <i class="fab fa-js-square"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">JavaScript</h3>
-                    <p class="text-gray-300">Adding interactivity and dynamic behavior to web pages using JavaScript.</p>
+                <h3 class="text-2xl font-bold mb-2">CSS</h3>
+                <p class="text-gray-300">Styling web pages and creating visually appealing designs with CSS.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fab fa-js-square"></i>
                 </div>
-                <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
-                    <div class="text-5xl mb-4 text-blue-500">
-                        <i class="fab fa-bootstrap"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">Bootstrap</h3>
-                    <p class="text-gray-300">Utilizing Bootstrap framework for responsive and mobile-first web development.</p>
+                <h3 class="text-2xl font-bold mb-2">JavaScript</h3>
+                <p class="text-gray-300">Adding interactivity and dynamic behavior to web pages using JavaScript.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fab fa-bootstrap"></i>
                 </div>
-                <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
-                    <div class="text-5xl mb-4 text-blue-500">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">Tailwind CSS</h3>
-                    <p class="text-gray-300">Creating utility-first CSS designs with Tailwind CSS framework.</p>
+                <h3 class="text-2xl font-bold mb-2">Bootstrap</h3>
+                <p class="text-gray-300">Utilizing Bootstrap framework for responsive and mobile-first web development.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fab fa-css3-alt"></i>
                 </div>
-                <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
-                    <div class="text-5xl mb-4 text-blue-500">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">React JS</h3>
-                    <p class="text-gray-300">Building modern, fast, and scalable web applications using React JS.</p>
+                <h3 class="text-2xl font-bold mb-2">Tailwind CSS</h3>
+                <p class="text-gray-300">Creating utility-first CSS designs with Tailwind CSS framework.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">React JS</h3>
+                <p class="text-gray-300">Building modern, fast, and scalable web applications using React JS.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div id="Pricing" style="margin-top: 50px;" class="container mx-auto px-4">
+        <h3 class="text-center text-2xl font-bold mb-8 text-4xl md:text-5xl">Web Development Pricing Plans</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="pricing-card p-6 bg-black border border-gray-700 rounded-lg shadow-lg">
+                <h4 class="text-2xl font-bold mb-4">Basic Website</h4>
+                <p class="text-gray-300 mb-4">Ideal for small businesses or personal use</p>
+                <p class="text-4xl font-bold mb-4">$150<span class="text-lg">/project</span></p>
+                <ul class="mb-6">
+                    <li class="mb-2">Up to 5 Pages</li>
+                    <li class="mb-2">Responsive Design</li>
+                    <li class="mb-2">Basic SEO</li>
+                    <li class="mb-2">Contact Form</li>
+                    <li class="mb-2">1 Month Support</li>
+                </ul>
+                <button class="py-2 px-4 bg-blue-500 text-white rounded-3xl font-semibold">Get Started</button>
+            </div>
+            <div class="pricing-card p-6 bg-black border border-gray-700 rounded-lg shadow-lg">
+                <h4 class="text-2xl font-bold mb-4">Professional Website</h4>
+                <p class="text-gray-300 mb-4">Best for growing businesses</p>
+                <p class="text-4xl font-bold mb-4">$300<span class="text-lg">/project</span></p>
+                <ul class="mb-6">
+                    <li class="mb-2">Up to 15 Pages</li>
+                    <li class="mb-2">Responsive Design</li>
+                    <li class="mb-2">Advanced SEO</li>
+                    <li class="mb-2">E-commerce Capabilities</li>
+                    <li class="mb-2">3 Months Support</li>
+                </ul>
+                <button class="py-2 px-4 bg-blue-500 text-white rounded-3xl font-semibold">Get Started</button>
+            </div>
+            <div class="pricing-card p-6 bg-black border border-gray-700 rounded-lg shadow-lg">
+                <h4 class="text-2xl font-bold mb-4">Enterprise Website</h4>
+                <p class="text-gray-300 mb-4">For large businesses with complex needs</p>
+                <p class="text-4xl font-bold mb-4">$1000<span class="text-lg">/project</span></p>
+                <ul class="mb-6">
+                    <li class="mb-2">Unlimited Pages</li>
+                    <li class="mb-2">Custom Design</li>
+                    <li class="mb-2">Full SEO Package</li>
+                    <li class="mb-2">Advanced E-commerce</li>
+                    <li class="mb-2">1 Year Support</li>
+                </ul>
+                <button class="py-2 px-4 bg-blue-500 text-white rounded-3xl font-semibold">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="Contact" style="margin-top: 50px;" class="flex items-center min-h-screen">
+        <div class="container mx-auto">
+            <div class="max-w-md mx-auto my-10 p-5 rounded-md shadow-sm">
+                <div class="text-center">
+                    <h1 class="my-3 text-3xl font-semibold text-gray-100">Contact Us</h1>
+                    <p class="text-gray-400">Fill up the form below to send us a message.</p>
+                </div>
+                <div class="m-7">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                        <input type="hidden" name="access_key" value="f4f0c21d-8b22-4b40-a689-27db560df3eb" />
+                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                        <div class="mb-6">
+                            <label for="name" class="block mb-2 text-sm text-gray-400">Full Name</label>
+                            <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" />
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block mb-2 text-sm text-gray-400">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" />
+                        </div>
+                        <div class="mb-6">
+                            <label for="phone" class="block mb-2 text-sm text-gray-400">Phone Number</label>
+                            <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" />
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block mb-2 text-sm text-gray-400">Your Message</label>
+                            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" required></textarea>
+                        </div>
+                        <div class="mb-6">
+                            <button type="submit" class="w-full bg-indigo-600 inline-block text-white no-underline hover:text-indigo-100 py-4 px-4 rounded-sm focus:outline-none">Send Message</button>
+                        </div>
+                        <p class="text-base text-center text-gray-400" id="result"></p>
+                    </form>
                 </div>
             </div>
         </div>
-    
-        <!-- Pricing Section -->
-        <div style="margin-top: 50px;" class="container mx-auto px-4">
-            <h3 class="text-center text-2xl font-bold mb-8 text-4xl md:text-5xl font-bold mb-4 neon-text">Web Development Pricing Plans</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="pricing-card p-6 border border-gray-700 rounded-lg shadow-lg">
-                    <h4 class="text-2xl font-bold mb-4">Basic Website</h4>
-                    <p class="text-gray-300 mb-4">Ideal for small businesses or personal use</p>
-                    <p class="text-4xl font-bold mb-4">$150<span class="text-lg">/project</span></p>
-                    <ul class="mb-6">
-                        <li class="mb-2">Up to 5 Pages</li>
-                        <li class="mb-2">Responsive Design</li>
-                        <li class="mb-2">Basic SEO</li>
-                        <li class="mb-2">Contact Form</li>
-                        <li class="mb-2">1 Month Support</li>
-                    </ul>
-                    <button class="py-2 px-4 bg-blue-500 text-white rounded-3xl font-semibold">Get Started</button>
-                </div>
-                <div class="pricing-card p-6 border border-gray-700 rounded-lg shadow-lg">
-                    <h4 class="text-2xl font-bold mb-4">Professional Website</h4>
-                    <p class="text-gray-300 mb-4">Best for growing businesses</p>
-                    <p class="text-4xl font-bold mb-4">$300<span class="text-lg">/project</span></p>
-                    <ul class="mb-6">
-                        <li class="mb-2">Up to 15 Pages</li>
-                        <li class="mb-2">Responsive Design</li>
-                        <li class="mb-2">Advanced SEO</li>
-                        <li class="mb-2">E-commerce Capabilities</li>
-                        <li class="mb-2">3 Months Support</li>
-                    </ul>
-                    <button class="py-2 px-4 bg-blue-500 text-white rounded-3xl font-semibold">Get Started</button>
-                </div>
-                <div class="pricing-card p-6 border border-gray-700 rounded-lg shadow-lg">
-                    <h4 class="text-2xl font-bold mb-4">Enterprise Website</h4>
-                    <p class="text-gray-300 mb-4">For large businesses with complex needs</p>
-                    <p class="text-4xl font-bold mb-4">$1000<span class="text-lg">/project</span></p>
-                    <ul class="mb-6">
-                        <li class="mb-2">Unlimited Pages</li>
-                        <li class="mb-2">Custom Design</li>
-                        <li class="mb-2">Full SEO Package</li>
-                        <li class="mb-2">Advanced E-commerce</li>
-                        <li class="mb-2">1 Year Support</li>
-                    </ul>
-                    <button class="py-2 px-4 bg-blue-500 text-white rounded-3xl font-semibold">Get Started</button>
-                </div>
-            </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-black text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Ready to Get Started?</h2>
+            <p class="text-lg md:text-xl mb-8">Transform your ideas into reality with our expert web development services.</p>
+            <a href="#Pricing" class="cta-button"><button class="py-3 px-8 bg-blue-500 text-white rounded-3xl font-semibold hover:bg-blue-600 transition duration-300 ">Contact Us Today</button></a>
         </div>
-    
-        <!-- Contact Section -->
-        <div style="margin-top: 50px;" class="flex items-center min-h-screen cyber-grid">
-            <div class="container mx-auto">
-                <div class="max-w-md mx-auto my-10 cyber-grid p-5 rounded-md shadow-sm">
-                    <div class="text-center">
-                        <h1 class="my-3 text-3xl font-semibold text-gray-100">Contact Us</h1>
-                        <p class="text-gray-400">Fill up the form below to send us a message.</p>
-                    </div>
-                    <div class="m-7">
-                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
-                            <input type="hidden" name="access_key" value="f4f0c21d-8b22-4b40-a689-27db560df3eb" />
-                            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-                            <input type="checkbox" name="botcheck" id="" style="display: none;" />
-    
-                            <div class="mb-6">
-                                <label for="name" class="block mb-2 text-sm text-gray-400">Full Name</label>
-                                <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" />
-                            </div>
-                            <div class="mb-6">
-                                <label for="email" class="block mb-2 text-sm text-gray-400">Email Address</label>
-                                <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" />
-                            </div>
-                            <div class="mb-6">
-                                <label for="phone" class="block mb-2 text-sm text-gray-400">Phone Number</label>
-                                <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 h-12 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" />
-                            </div>
-                            <div class="mb-6">
-                                <label for="message" class="block mb-2 text-sm text-gray-400">Your Message</label>
-                                <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 rounded-sm placeholder-gray-500 text-gray-900 bg-gray-100 text-sm focus:outline-none" required></textarea>
-                            </div>
-                            <div class="mb-6">
-                                <button type="submit" class="w-full bg-indigo-600 inline-block text-white no-underline hover:text-indigo-100 py-4 px-4 rounded-sm focus:outline-none">Send Message</button>
-                            </div>
-                            <p class="text-base text-center text-gray-400" id="result"></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- CTA Section -->
-        <div style="margin-top: 50px;" class="bg-black text-white py-16">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Ready to Get Started?</h2>
-                <p class="text-lg md:text-xl mb-8">Transform your ideas into reality with our expert web development services.</p>
-                <button class="py-3 px-8 bg-blue-500 text-white rounded-3xl font-semibold hover:bg-blue-600 transition duration-300">Contact Us Today</button>
-            </div>
-        </div>
-    
-        <script src="script.js"></script>
-    </body>
-    </html>
-    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
