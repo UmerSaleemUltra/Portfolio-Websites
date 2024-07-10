@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body class="bg-black text-white cyber-grid">
+
+    <nav class='w-full py-3  border-gray-700 cyber-grid'>
+        <div class='flex justify-between px-5 md:px-20 items-center font-semibold'>
+            <div>
+                <h1 class="text-2xl">UMER SALEEM</h1>
+            </div>
+            <div class='hidden md:flex xl:gap-10 md:gap-8 gap-2'>
+                <a href="#" class="hover:text-gray-400">Home</a>
+                <a href="#" class="hover:text-gray-400">About</a>
+                <a href="#" class="hover:text-gray-400">Features</a>
+                <a href="#" class="hover:text-gray-400">Services</a>
+                <a href="#" class="hover:text-gray-400">Contact</a>
+            </div>
+            <div class='hidden md:block'>
+                <button id="get-started" class='py-2 px-6 bg-white text-black rounded-3xl font-semibold'>Get Started</button>
+            </div>
+            <div class='md:hidden flex items-center'>
+                <button id="hamburger" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="flex flex-col md:flex-row items-center justify-center h-screen text-center md:text-left px-5 md:px-20 bg-black cyber-grid">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Make Designs That Engage, Delight, and Connect</h1>
+            <p class="text-lg md:text-xl mb-4">Hi, I'm Umer Saleem with more than 10 years of experience, I'm here to turn your ideas into digital success!</p>
+            <button class="py-2 px-6 bg-blue-500 text-white rounded-3xl font-semibold mb-4">Get Started</button>
+            <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl md:text-3xl font-bold">660+</h2>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl md:text-3xl font-bold">99%</h2>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl md:text-3xl font-bold">99%</h2>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center ">
+            <img src="https://img.freepik.com/premium-photo/man-sits-bench-with-laptop-plant-background_148003-2850.jpg?ga=GA1.1.1737391858.1720549462&semt=ais_hybrid" alt="Profile Image" class="w-3/4 md:w-full rounded-full border-4 border-gray-300 mt-5">
+        </div>
+    </section>
+    
+    <div id="mobile-menu" class='fixed inset-y-0 left-0 w-64 bg-black text-white  transform -translate-x-full cyber-grid'>
+        <button id="close-menu" class="focus:outline-none self-end mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <a href="#" class="block py-2">Home</a>
+        <a href="#" class="block py-2">About</a>
+        <a href="#" class="block py-2">Features</a>
+        <a href="#" class="block py-2">Services</a>
+        <a href="#" class="block py-2">Contact</a>
+    </div>
+    
+    <div class="sm:flex items-center max-w-screen-xl bg-black cyber-grid text-white">
+        <div class="sm:w-1/2 p-10">
+            <div class="image object-center text-center">
+                <img src="https://i.imgur.com/WbQnbas.png">
+            </div>
+        </div>
+        <div class="sm:w-1/2 p-5">
+            <div class="text">
+                <span class="text-gray-400 border-b-2 border-indigo-600 uppercase neon-text text-2xl font-semibold">About us</span>
+                <h2 class="my-4 font-bold text-3xl sm:text-4xl">About <span class="text-indigo-600">Our Company</span></h2>
+                <p class="text-gray-300">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, commodi
+                    doloremque, fugiat illum magni minus nisi nulla numquam obcaecati placeat quia, repellat tempore
+                    voluptatum.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div style="margin-top: 50px ;" class="container mx-auto px-4 ">
+        <h3 style="margin-left: 400px;"  class="text-2xl font-bold mb-2  text-4xl md:text-5xl font-bold mb-4 neon-text">Quantum Features</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg  ">
+                <div class="text-5xl mb-4 text-blue-500 ">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Website Development</h3>
+                <p class="text-gray-300">Building responsive, SEO-friendly, high-performance websites with top-notch communication throughout the project.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg  " >
+                <div class="text-5xl mb-4 text-indigo-500 ">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">UI/UX Design</h3>
+                <p class="text-gray-300">Crafting user-friendly interfaces and experiences that delight and engage users.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg  " >
+                <div class="text-5xl mb-4 text-green-500 ">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">SEO Friendly</h3>
+                <p class="text-gray-300">Optimizing websites to rank higher in search engine results and attract more traffic.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg  " >
+                <div class="text-5xl mb-4 text-red-500 ">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">E-commerce Websites</h3>
+                <p class="text-gray-300">Developing feature-rich online stores with seamless shopping experiences.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg  " >
+                <div class="text-5xl mb-4 text-yellow-500 ">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">High Performance</h3>
+                <p class="text-gray-300">Ensuring fast load times and optimal performance for all web applications.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg  " s>
+                <div class="text-5xl mb-4 text-teal-500 ">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Top Notch Communication</h3>
+                <p class="text-gray-300">Maintaining clear and consistent communication throughout the project lifecycle.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div style="margin-top: 50px;" class="container mx-auto px-4">
+        <h3 style="margin-left: 500px;" class="text-2xl font-bold mb-2  text-4xl md:text-5xl font-bold mb-4 neon-text ">Our Services</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Website Development</h3>
+                <p class="text-gray-300">Building responsive, SEO-friendly, high-performance websites with top-notch communication throughout the project.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-indigo-500">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">UI/UX Design</h3>
+                <p class="text-gray-300">Crafting user-friendly interfaces and experiences that delight and engage users.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-red-500">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">E-commerce Websites</h3>
+                <p class="text-gray-300">Developing feature-rich online stores with seamless shopping experiences.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-yellow-500">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Logo Design</h3>
+                <p class="text-gray-300">Creating memorable and impactful logos that define your brand's identity.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-pink-500">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Social Media Branding</h3>
+                <p class="text-gray-300">Building a cohesive and engaging brand presence across all social media platforms.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-green-500">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Creative Strategy</h3>
+                <p class="text-gray-300">Developing innovative strategies to enhance your brand's visibility and engagement.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div style="margin-top: 50px;" class="container mx-auto px-4">
+        <h3 style="margin-left: 550px;" class="text-2xl font-bold mb-2  text-4xl md:text-5xl font-bold mb-4 neon-text">Skills</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">HTML</h3>
+                <p class="text-gray-300">Building the structure of web pages with HTML.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">CSS</h3>
+                <p class="text-gray-300">Styling web pages and creating visually appealing designs with CSS.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">JavaScript</h3>
+                <p class="text-gray-300">Adding interactivity and dynamic behavior to web pages using JavaScript.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fab fa-bootstrap"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Bootstrap</h3>
+                <p class="text-gray-300">Utilizing Bootstrap framework for responsive and mobile-first web development.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Tailwind CSS</h3>
+                <p class="text-gray-300">Creating utility-first CSS designs with Tailwind CSS framework.</p>
+            </div>
+            <div class="feature-card rounded-lg p-6 backdrop-filter backdrop-blur-lg bg-opacity-30 bg-black border border-gray-500 shadow-lg">
+                <div class="text-5xl mb-4 text-blue-500">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">React JS</h3>
+                <p class="text-gray-300">Building modern, fast, and scalable web applications using React JS.</p>
+            </div>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
