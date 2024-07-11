@@ -16,6 +16,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(0, 255, 255, 0.1);
     transition: all 0.3s ease;
+    
 }
 
 .feature-card:hover {
@@ -259,3 +260,8 @@
 .was-validated :invalid:focus {
     --tw-ring-color: rgba(220, 53, 69, 0.2);
 }
+
+ p{
+font-size: 15px;
+ }
+
